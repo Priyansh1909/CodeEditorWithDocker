@@ -1,0 +1,16 @@
+#editor,.output{
+    height: 400px;
+    border: black 1px solid;
+}
+
+.button-container{
+    margin: 10px;
+}
+
+.button-container button{
+    background-color: lightblue;
+}
+
+.output{
+    color: #333;
+}

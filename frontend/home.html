@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Code Editor</title>
+    <link href="./Css/style.css" rel="stylesheet" />
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Web Code Editor</h1>
+        <div class="control_panel" >
+            Select Language: 
+            <select  id = "languages" class="languages" onchange="changeLanguage()">
+                <option value="py">Python</option>
+                <option value="js">javascript</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+            </select>
+        </div>
+        <div id="editor"></div>
+        <div class="button-container">
+            <button class="btn" onclick="executecode(event)">Run</button>
+        </div>
+        
+            <pre class="output"></pre>
+       
+    </div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="./JS/lib/ace.js"></script>
+    <script src="./JS/lib/theme-monokai.js"></script>
+    <script src="./JS/script.js"></script>
+    
+
+    
+</body>
+</html>
